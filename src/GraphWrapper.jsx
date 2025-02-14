@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { SigmaContainer, useLoadGraph, useRegisterEvents, useSigma} from '@react-sigma/core';
 import Graph from 'graphology';
 import { NodeImageProgram } from '@sigma/node-image';
-import text from './paste.txt'
 import maps from './img_map.json'
 import boons from './all_boons.json'
 import GraphEvents from './GraphEvents';
+
 
 function importAll(r) {
   let images = {};
@@ -19,17 +19,19 @@ const images = importAll(require.context('./boon_images', false, /\.(png|jpe?g|s
 const sigmaSettings = {
   nodeProgramClasses: { image: NodeImageProgram },
   defaultNodeType: 'image',
-  defaultEdgeType: 'arrow'
+  defaultEdgeType: 'arrow',
+  zIndex: true
 };
 
+const nodeSize = prereqedges => 10 + (prereqedges * 1.5);
 
 const GraphComponent = () => {
   const loadGraph = useLoadGraph();
-  const registerEvents = useRegisterEvents();
-  const sigma = useSigma();
 
   // loading graphs
   useEffect(() => {
+
+
     const loadData = async () => {
       try{
         const godColors = {
@@ -50,6 +52,7 @@ const GraphComponent = () => {
         const graph = new Graph();
 
         boons.forEach((boon) => {
+          var sizeNode = nodeSize(boon.prerequisites.prereqs.length);
           if (!graph.hasNode(boon.name)) {
             graph.addNode(boon.name, {
               x  : Math.random(),
@@ -61,7 +64,7 @@ const GraphComponent = () => {
               image: images[maps[boon.name]],
               
               color: godColors[boon.god] || '#808080',
-              size: 10
+              size: sizeNode
             });
             //console.log(graph.getNodeAttributes(boon.name).image);
 
@@ -80,6 +83,7 @@ const GraphComponent = () => {
                       });
                     }
                   }
+                
                 });
               }
             }
@@ -98,6 +102,8 @@ const GraphComponent = () => {
 
         loadGraph(graph);
 
+        
+
       }
       catch (error){
         console.error('Error in loadData:', error);
@@ -106,27 +112,6 @@ const GraphComponent = () => {
     loadData();
   }, [loadGraph]);
 
-  // EFFECTS YAYYAYAYAYAYFYASDUIFGAEDFRIWUJGFVHUIRWEDHGVWRIOVNSFJKNGBSRFNLGBWERFOGNERNOIGWERBNKGSRNIGUJRD
-  // useEffect(() => {
-  //   if (!sigma) return;  // Add this check
-    
-  //   //TODO: just register the event after the effects are added 
-  //   registerEvents({
-  //     enterNode: (event) => console.log('enterNode', event.node),
-  //     leaveNode: (event) => console.log('leaveNode', event.node)
-  //     // enterNode: (event) => {
-  //     //   console.log('Hovering over node:', event.node);
-  //     //   const graph = sigma.getGraph();
-  //     //   graph.setNodeAttribute(event.node, "size", 15);  
-  //     // },
-  //     // leaveNode: (event) => {
-  //     //   console.log('Left node:', event.node);
-  //     //   const graph = sigma.getGraph();
-  //     //   graph.setNodeAttribute(event.node, "size", 10);  
-  //     // },
-  //     // clickNode: (event) => console.log('clickNode', event.event, event.node, event.preventSigmaDefault)
-  //   });
-  // }, [registerEvents, sigma]);
 
 
   return null;
