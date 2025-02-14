@@ -1,0 +1,4536 @@
+[
+  {
+    "god": "Aphrodite",
+    "name": "Flutter Strike",
+    "type": "Attack",
+    "description": "Your Attacks deal more damage to nearby foes.\u25b8 Close-Up Damage: +80%/+100%/+120%/+140%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Flutter Flourish",
+    "type": "Special",
+    "description": "Your Specials deal more damage to nearby foes.\u25b8 Close-Up Damage: +100%/+150%/+200%/+250%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Rapture Ring",
+    "type": "Ring",
+    "description": "Your Casts inflict Weak, and damage foes while dragging them toward the center.\u25b8 Cast Damage (every 0.85 Sec.): 10/15/20/25",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Passion Rush",
+    "type": "Sprint",
+    "description": "Dashing damages surrounding foes and inflict Weak, and again once you stop.\u25b8 Area Damage: 20/30/40/50",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Glamour Gain",
+    "type": "Magick",
+    "description": "You inflict Weak on nearby foes, and gradually restore  while any nearby foe is Weak.\u25b8 Magick Restoration (every 1 Sec.): 6/8/10/12",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Wispy Wiles",
+    "type": "Infusion",
+    "description": "Gain a chance to Dodge for each  you have.\u25b8 Dodge Chance per Air Boon: +3%",
+    "prerequisites": {
+      "type": "elements",
+      "prereqs": [
+        [
+          "Air",
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Secret Crush",
+    "type": "",
+    "description": "After you enter a Location, Prime 20 to add Power to your Attack.\u25b8 Attack Power: +5/+7/+9/+11",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Life Affirmation",
+    "type": "",
+    "description": "Any  rewards you find have greater effect.\u25b8 Bonus Life Gain: +40%/+50%/+60%/+70%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Shameless Attitude",
+    "type": "",
+    "description": "You deal more damage. While you have at least 80%, the bonus is doubled.\u25b8 Bonus Damage: +10%/+15%/+20%/+25%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Heart Breaker",
+    "type": "",
+    "description": "Whenever you use 40, create a Heartthrob.\u25b8 Heartthrob Area Damage: 80/100/120/140",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Healthy Rebound",
+    "type": "",
+    "description": "Whenever you exit a Location, restore 100% if you have not lost too much.\u25b8 Min Life Required: 80%/70%/60%/50%",
+    "prerequisites": {
+      "type": "the_following",
+      "prereqs": [
+        {
+          "boon": "Shameless Attitude"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Broken Resolve",
+    "type": "",
+    "description": "Your Weak effects are more potent.\u25b8 Weak Damage Reduction: +10%/+12%/+14%/+16%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Rapture Ring"
+        },
+        {
+          "boon": "Passion Rush"
+        },
+        {
+          "boon": "Glamour Gain"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Sweet Surrender",
+    "type": "",
+    "description": "Weak-afflicted foes take more damage.\u25b8 Damage vs. Weak: +10%/+15%/+20%/+25%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Rapture Ring"
+        },
+        {
+          "boon": "Passion Rush"
+        },
+        {
+          "boon": "Glamour Gain"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Nervous Wreck",
+    "type": "Legendary",
+    "description": "Whenever you inflict Weak, also randomly inflict other gods' Curses.\u25b8 Bonus Random Curses: 3",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Broken Resolve",
+          "group_id": 1
+        },
+        {
+          "boon": "Sweet Surrender",
+          "group_id": 1
+        },
+        {
+          "boon": "Shameless Attitude",
+          "group_id": 1
+        },
+        {
+          "boon": "Secret Crush",
+          "group_id": 1
+        },
+        {
+          "boon": "Rapture Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 2
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Flutter Strike",
+          "group_id": 3
+        },
+        {
+          "boon": "Flutter Flourish",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Island Getaway",
+    "type": "Duo(Poseidon)",
+    "description": "You take less damage from nearby foes. Boons of Aphrodite treats all foes as nearby.\u25b8 Damage Resistance: +15%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flutter Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flutter Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Wave Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Wave Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Tidal Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Breaker Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Fluid Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Burning Desire",
+    "type": "Duo(Hestia)",
+    "description": "While foes are Weak, any Scorch they have does not diminish as it deals damage.\u25b8 Scorch Duration on Weak Foes: \u221e",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Rapture Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Ecstatic Obsession",
+    "type": "Duo(Hera)",
+    "description": "During Encounters with multiple foes,1 foe is always afflicted with Charm.\u25b8 Foes Required: 2 (or more)",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Rapture Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Nasty Comeback",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Sunny Disposition",
+    "type": "Duo(Apollo)",
+    "description": "Whenever you create Heartthrobs, create more.\u25b8 Bonus Heartthrobs: +2",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Heart Breaker",
+          "group_id": 1
+        },
+        {
+          "boon": "Nova Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Nova Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Hearty Appetite",
+    "type": "Duo(Demeter)",
+    "description": "You deal more damage the more   you have.\u25b8 Bonus Damage per 100 Life: +10%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flutter Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flutter Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Healthy Rebound",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Tranquil Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Plentiful Forage",
+          "group_id": 2
+        },
+        {
+          "boon": "Frigid Sprint",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Love Handles",
+    "type": "Duo(Hephaestus)",
+    "description": "Your blast effects from Hephaestus also create a Heartthrobs.\u25b8 Heartthrob Area Damage: 120",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flutter Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flutter Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Rapture Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Aphrodite",
+    "name": "Romantic Spark",
+    "type": "Duo(Zeus)",
+    "description": "If you Sprint into Blitz-afflicted foes, the effect activates immediately and is stronger.\u25b8 Bonus Blitz Damage: +100%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flutter Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flutter Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Rapture Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Artemis",
+    "name": "Pressure Points",
+    "type": "",
+    "description": "Any damage you deal may be Critical.\u25b8 Critical Chance: +3%/+4%/+5%/+6%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Artemis",
+    "name": "Shadow Pounce",
+    "type": "",
+    "description": "After you Dash, your \u03a9 Moves deal more damage for 2 Sec.\u25b8 Bonus Omega Damage: +20%/+25%/+30%/+35%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Artemis",
+    "name": "First Blood",
+    "type": "",
+    "description": "Foes with at least 80% or 80% Armor may take Critical damage.\u25b8 Critical Chance: +15%/+23%/+30%/+38%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Artemis",
+    "name": "Lethal Snare",
+    "type": "",
+    "description": "Foes in your Casts may take Critical damage from your Attacks.\u25b8 Critical Chance: +10%/+13%/+16%/+19%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Artemis",
+    "name": "Easy Shot",
+    "type": "",
+    "description": "A piercing arrow fires towards any foe damaged by your \u03a9 Cast.\u25b8 Arrow Damage: 30/40/50/60",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Artemis",
+    "name": "Support Fire",
+    "type": "",
+    "description": "After you hit with your Attacks or Specials, fire a seeking arrow.\u25b8 Arrow Damage: 10/15/20/25",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Artemis",
+    "name": "Death Warrant",
+    "type": "",
+    "description": "A random foe occasionally becomes Marked. If it takes Critical damage, this repeats.\u25b8 Time Between Marks: 20 Sec./18 Sec./16 Sec./14 Sec.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Athena",
+    "name": "Phalanx Shot",
+    "type": "Special",
+    "description": "Your Specials also launch a projectile ahead that can Deflect, rearming after 2 Sec.\u25b8 Projectile Damage: 10/15/20/25",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Athena",
+    "name": "Renewed Faith",
+    "type": "",
+    "description": "Replenish all spent uses of  Death Defiance now, and improved their potency.\u25b8 Life Restoration When Used: +20%/+30%/+40%/+50%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Athena",
+    "name": "Stalwart Stand",
+    "type": "",
+    "description": "Gain +1  Death Defiance that replenishes in each Location, but you Prime .\u25b8 Magick Primed: 150/125/100/75",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Athena",
+    "name": "Mental Block",
+    "type": "Ring",
+    "description": "Your Casts also deal a burst of damage and make you briefly Deflect.\u25b8 Cast Damage: 60/90/120/150",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Athena",
+    "name": "Divine Dash",
+    "type": "Sprint",
+    "description": "Your Dash deals damage to surrounding foes where you end up, and can Deflect.\u25b8 Dash Damage: 10/15/20/25",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Athena",
+    "name": "Defensive Posture",
+    "type": "",
+    "description": "After you take damage, become Impervious for 2 Sec.\u25b8 Recharge Time Between Uses: 13 Sec./11 Sec./9 Sec./7 Sec.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Addled",
+    "type": "",
+    "description": "For the next 3/5 Encounters, each time you use Casts, get hit for -3/-6.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Ordinary",
+    "type": "",
+    "description": "The next 2/3 Boons you find are limited to Common blessings.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Excruciating",
+    "type": "",
+    "description": "For the next 3/5 Encounters, you take +20%/+50% damage.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Hobbled",
+    "type": "",
+    "description": "For the next 3/5 Encounters, your Dash is slower and also uses 3/6 (if you have it).",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Caustic",
+    "type": "",
+    "description": "For the next 3/5 Encounters, slain foes toss Inferno-Bomb at you.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Gagged",
+    "type": "",
+    "description": "For the next 3/5 Encounters, each time you use \u03a9 Moves, get hit for -5/-8.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Atrophic",
+    "type": "",
+    "description": "For the next 3/5 Encounters, you have -20/-29 .",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Enshrouded",
+    "type": "",
+    "description": "For the next 4/6 Encounters, Location Reward previews are hidden.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Fixated",
+    "type": "",
+    "description": "For the next 4/6 Encounters, whenever you use , Prime it.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Barren",
+    "type": "",
+    "description": "For the next 7/11 Encounters, your Arcana Cards have no effect.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Pauper's",
+    "type": "",
+    "description": "For the next 4/6 Encounters, you cannot earn .",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Maimed",
+    "type": "",
+    "description": "For the next 4/6 Encounters, each time you use Attacks, get hit for -3/-6.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Rejected",
+    "type": "",
+    "description": "The next 2/4 Boons you find have 1 fewer blessing to choose from.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Flayed",
+    "type": "",
+    "description": "For the next 4/6 Encounters, each time you use Specials, get hit for -3/-6.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Slothful",
+    "type": "",
+    "description": "For the next 4/6 Encounters, you move and Sprint 40%/60% slower.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Paralyzing",
+    "type": "",
+    "description": "For the next 4/6 Encounters, whenever you take damage, you are stunned for 0.5/1.4 Sec.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Chaos",
+    "name": "Doomed",
+    "type": "",
+    "description": "You have 120 Sec. to clear 2/3 Encounters, or get hit for 500.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Ice Strike",
+    "type": "Attack",
+    "description": "Your Attacks deal more damage and inflict Freeze.\u25b8 Attack Damage: +30%/+45%/+60%/+75%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Ice Flourish",
+    "type": "Special",
+    "description": "Your Specials deal more damage and inflict Freeze.\u25b8 Special Damage: +40%/+60%/+80%/+100%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Arctic Ring",
+    "type": "Ring",
+    "description": "Your Casts repeatedly deal damage in the area and inflict Freeze.\u25b8 Cast Damage (every 0.5 Sec.): 10/15/20/25",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Frigid Sprint",
+    "type": "Sprint",
+    "description": "Your Sprint forms a Cyclone around you that lingers after you stop.\u25b8 Cyclone Damage (every 0.25 Sec.): 4/6/8/10",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Tranquil Gain",
+    "type": "",
+    "description": "After remaining inactive for 1 Sec., rapidly restores  until you act.\u25b8 Magick Restoration (every 1 Sec.): 40%/60%/80%/100%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Frosty Veneer",
+    "type": "Infusion",
+    "description": "While you have at least 6 , you cannot take more damage per hit than the limit.\u25b8 Max Damage per Hit: 20",
+    "prerequisites": {
+      "type": "elements",
+      "prereqs": [
+        [
+          "Water",
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Rare Crop",
+    "type": "",
+    "description": "Your Boons become Common, then gain Rarity every 3 Encounter(s).\u25b8 Random Boons Affected: 1/2/3/4",
+    "prerequisites": {
+      "type": "edge_case",
+      "prereqs": [
+        {
+          "boon": "Have at least one Boon that is not the Heroic rarity."
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Gale Force",
+    "type": "",
+    "description": "Your Casts also create a Cyclone at the binding circle.\u25b8 Cyclone Damage (every 0.25 Sec.): 4/8/12/16",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Plentiful Forage",
+    "type": "",
+    "description": "Whenever you gather plants, seeds, or mushrooms, gain . Receive 1  now.\u25b8 Max Life from Gathering: +5/+8/+10/+13",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Snow Queen",
+    "type": "",
+    "description": "After you enter a Location, Prime a barrier that absorbs 1 instance of damage.\u25b8 Magick Primed: 20/15/10/5",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Local Climate",
+    "type": "",
+    "description": "Your \u03a9 Cast deals bonus damage and follows you, even as you start to Channel it.\u25b8 Cast Damage: +20%/+30%/+40%/+50%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Cold Storage",
+    "type": "",
+    "description": "Your Freeze effects last longer.\u25b8 Freeze Duration: +2 Sec./+3 Sec./+4 Sec./+5 Sec.",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Ice Strike"
+        },
+        {
+          "boon": "Ice Flourish"
+        },
+        {
+          "boon": "Arctic Ring"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Weed Killer",
+    "type": "",
+    "description": "Your \u03a9 Attack deals more damage, but uses +10.\u25b8 Omega Attack Damage: +50%/+75%/+100%/+125%",
+    "prerequisites": {
+      "type": "any_boon",
+      "prereqs": [
+        {
+          "boon": "Strike"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Winter Harvest",
+    "type": "Legendary",
+    "description": "Freeze-afflicted foes shatter at 10%, dealing damage in the area.\u25b8 Shatter Area Damage: 100",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Ice Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Plentiful Forage",
+          "group_id": 2
+        },
+        {
+          "boon": "Snow Queen",
+          "group_id": 2
+        },
+        {
+          "boon": "Rare Crop",
+          "group_id": 2
+        },
+        {
+          "boon": "Weed Killer",
+          "group_id": 3
+        },
+        {
+          "boon": "Cold Storage",
+          "group_id": 3
+        },
+        {
+          "boon": "Local Climate",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Freezer Burn",
+    "type": "Duo(Hestia)",
+    "description": "Whenever you inflict Freeze, on a foe with Scorch, deal damage and remove Scorch.\u25b8 Damage from Scorch: 200%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Ice Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Room Temperature",
+    "type": "Duo(Hephaestus)",
+    "description": "Your blast effects from Hephaestus clear Freeze, so you Freeze foes again right away.\u25b8 Freeze Re-Apply Time: 0 Sec.",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Ice Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Natural Selection",
+    "type": "Duo(Poseidon)",
+    "description": "Locations Rewards exclude , , and . Boons are more likely to be Rare or better.\u25b8 Improved Rarity Chance: +45%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Ice Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Tranquil Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Frigid Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Tidal Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Fluid Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Breaker Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Ocean's Bounty",
+          "group_id": 2
+        },
+        {
+          "boon": "Double Up",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Cherished Heirloom",
+    "type": "Duo(Hera)",
+    "description": "Most other Keepsakes you equip are stronger this night (if possible).\u25b8 Bonus Keepsake Ranks: +1",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Ice Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Tranquil Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Frigid Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Hearty Appetite",
+    "type": "Duo(Aphrodite)",
+    "description": "You deal more damage the more  you have.\u25b8 Bonus Damage per 100 Life: +10%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Ice Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Tranquil Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Frigid Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Plentiful Forage",
+          "group_id": 1
+        },
+        {
+          "boon": "Flutter Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flutter Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 2
+        },
+        {
+          "boon": "Healthy Rebound",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Hail Storm",
+    "type": "Duo(Zeus)",
+    "description": "Your Freeze effects also cause lightning bolts to repeatedly strike afflicted foes.\u25b8 Lightning Damage (every 0.5 Sec.): 30",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Ice Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Storm Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Ionic Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Thunder Sprint",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Demeter",
+    "name": "Tropical Cyclone",
+    "type": "Duo(Apollo)",
+    "description": "While standing in a Cyclone, you randomly fire gales every 0.3 Sec.\u25b8 Gale Damage (every 0.5 Sec.): 70",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Frigid Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Gale Force",
+          "group_id": 1
+        },
+        {
+          "boon": "Nova Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Nova Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Dionysus",
+    "name": "Tipsy Shot",
+    "type": "",
+    "description": "Hold Cast to lob a large explosion. The binding circle forms there.\u25b8 Blast Damage: 300/450/600/750",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Dionysus",
+    "name": "Bounce Back",
+    "type": "",
+    "description": "After each Encounter, restore some  if you took any damage in that Encounter.\u25b8 Lost Life Restored: 50%/60%/70%/80%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Dionysus",
+    "name": "Drunken Stupor",
+    "type": "",
+    "description": "Your \u03a9 Moves inflict Hangover the first time they strike foes.\u25b8 Hangover Damage (every 0.5 Sec.): 50/75/100/125",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Dionysus",
+    "name": "Happy Haze",
+    "type": "",
+    "description": "Every 8 Sec. in each Encounter, Festive Fog appears, making you stronger while in it.\u25b8 In-Fog Bonus Damage: +30%/+40%/+50%/+60%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Dionysus",
+    "name": "Worry Free",
+    "type": "",
+    "description": "Gain , but how much you have becomes a mystery.\u25b8 Max Life: +80/+100/+120/+140",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Dionysus",
+    "name": "Bottomless Drink",
+    "type": "",
+    "description": "In each Encounter, Grape Juice appears, in the area and grants Power when used.\u25b8 Reappearance Time: 10 Sec./9 Sec./8 Sec./7 Sec.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Tall Order",
+    "type": "Infusion",
+    "description": "While you have at least 2 each of     Elements, you deal more damage.\u25b8 Infused Damage: +20%",
+    "prerequisites": {
+      "type": "elements",
+      "prereqs": [
+        [
+          "Fire",
+          1
+        ],
+        [
+          "Earth",
+          1
+        ],
+        [
+          "Air",
+          1
+        ],
+        [
+          "Water",
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Greater Evasion",
+    "type": "",
+    "description": "Whenever you are struck, you may Dodge any damage.\u25b8 Dodge Chance: +10%/15%/20%/25%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Saved Breath",
+    "type": "",
+    "description": "Your \u03a9 Cast uses less .\u25b8 Omega Cast Cost: -50%/-60%/-70%/-80%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Nimble Mind",
+    "type": "",
+    "description": "Your \u03a9 Moves are faster.\u25b8 Omega Move Speed: +15%/+20%/+25%/+30%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Nimble Limbs",
+    "type": "",
+    "description": "Your Attack, Special, and Cast are faster.\u25b8 Strike Speed: +10%/+15%/+20%/+25%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Midnight Oil",
+    "type": "",
+    "description": "While your Hex is ready, you move and strike faster.\u25b8 Bonus Move & Weapon Speed: +15%/+20%/+25%/+30%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Quick Buck",
+    "type": "",
+    "description": "You find  in greater quantities. Receive 100 now, plus the bonus!\u25b8 Bonus Gold: +20%/+30%/+40%/+50%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Hard Target",
+    "type": "",
+    "description": "Most foes' ranged shots are slower.\u25b8 Foe Projectile Speed: -30%/-40%/-50%/-60%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Witty Retort",
+    "type": "",
+    "description": "Your Hex requires using less  before it is ready.\u25b8 Reduced Magick Cost: -15%/-20%/-25%/-25%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Nitro Boost",
+    "type": "Sprint",
+    "description": "Your Sprint is 15% faster and gives you a barrier that ignores instances of damage.\u25b8 Hits Blocked per Encounter: 1/2/3/4",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Mean Streak",
+    "type": "",
+    "description": "Each time you slay a foe, deal more damage for the next 30 Sec.\u25b8 Bonus Damage per Slain Foe: +1%/+1.5%/+2%/+2.5%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hermes",
+    "name": "Close Call",
+    "type": "Legendary",
+    "description": "Gain +1 use of Death Defiance that makes everything else move 90% slower.\u25b8 Slow Duration: 8 Sec.",
+    "prerequisites": {
+      "type": "edge_case",
+      "prereqs": [
+        {
+          "boon": "At least one Hermes Boon."
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Wave Strike",
+    "type": "Attack",
+    "description": "Your Attacks hit foes with a splash that knocks other foes away.\u25b8 Splash Damage: 15/20/25/30",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Wave Flourish",
+    "type": "Special",
+    "description": "Your Specials hit foes with a splash that knocks other foes away.\u25b8 Splash Damage: 20/30/40/50",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Tidal Ring",
+    "type": "Ring",
+    "description": "Your Casts also immediately hit foes in front of you with a powerful splash.\u25b8 Splash Damage: 90/135/180/225",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Breaker Sprint",
+    "type": "Sprint",
+    "description": "Your Sprint deals damage on impact and knocks foes away, but uses 5 per hit.\u25b8 Impact Damage: 80/120/160/200",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Fluid Gain",
+    "type": "",
+    "description": "After you strike foes with your Weapon, a Spirit Bubble may appear.\u25b8 Spirit Bubble Chance: 10%/12%/14%/16%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Water Fitness",
+    "type": "Infusion",
+    "description": "Gain  for each  you have.\u25b8 Max Life per Water Boon: +15",
+    "prerequisites": {
+      "type": "elements",
+      "prereqs": [
+        [
+          "Water",
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Sea Star",
+    "type": "",
+    "description": "Whenever you claim rewards other than Boons, , or rare resources, a copy may appear.\u25b8 Double Reward Chance: 20%/25%/30%/35%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Hydraulic Might",
+    "type": "",
+    "description": "At the start of each Encounter, your Attacks and Specials are stronger for 10 Sec..\u25b8 Initial Damage Bonus: +100%/+133%/+166%/+200%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Flood Control",
+    "type": "",
+    "description": "After you enter a Location, Prime 30 to reduce any damage you would take.\u25b8 Damage Reduction per Hit: -2/-3/-4/-5",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Splash Fount",
+    "type": "",
+    "description": "Whenever you use \u03a9 Moves, create a watery blast near the first foe you damage.\u25b8 Delayed Blast Damage: 50/70/90/110",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Ocean's Bounty",
+    "type": "",
+    "description": "Any Minor Finds and  are worth more. Receive , , and sometimes  and , now.\u25b8 Reward Value: +50%/+55%/+60%/+65%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Geyser Spout",
+    "type": "",
+    "description": "Your \u03a9 Cast immediately detonates, dealing damage and knocking foes away\u25b8 Omega Cast Damage: 200/240/280/320",
+    "prerequisites": {
+      "type": "any_boon",
+      "prereqs": [
+        {
+          "boon": "Ring"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Slippery Slope",
+    "type": "",
+    "description": "Your splash effects from Poseidon also inflict Slip on foes.\u25b8 Slip Bonus Damage: +5%/+10%/+15%/+20%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Wave Strike"
+        },
+        {
+          "boon": "Wave Flourish"
+        },
+        {
+          "boon": "Tidal Ring"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "King Tide",
+    "type": "Legendary",
+    "description": "Your splash effects from Poseidon are larger and deal bonus damage to Guardians.\u25b8 Splash Damage vs. Guardians: +200%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Wave Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Wave Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Tidal Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Breaker Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Fluid Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Geyser Spout",
+          "group_id": 2
+        },
+        {
+          "boon": "Hydraulic Might",
+          "group_id": 3
+        },
+        {
+          "boon": "Splash Fount",
+          "group_id": 3
+        },
+        {
+          "boon": "Slippery Slope",
+          "group_id": 3
+        },
+        {
+          "boon": "Flood Control",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Island Getaway",
+    "type": "Duo(Aphrodite)",
+    "description": "You take less damage from nearby foes. Boons of Aphrodite treat all foes as nearby.\u25b8 Damage Resistance: +15%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Wave Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Wave Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Tidal Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Breaker Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Fluid Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Flutter Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flutter Flourish",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Natural Selection",
+    "type": "Duo(Demeter)",
+    "description": "Locations Rewards exclude , , and . Boons are more likely to be Rare or better.\u25b8 Rarity Chance: +45%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Tidal Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Breaker Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Fluid Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Ocean's Bounty",
+          "group_id": 1
+        },
+        {
+          "boon": "Double Up",
+          "group_id": 1
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Tranquil Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Frigid Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Snow Queen",
+          "group_id": 2
+        },
+        {
+          "boon": "Cold Storage",
+          "group_id": 2
+        },
+        {
+          "boon": "Rare Crop",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Killer Current",
+    "type": "Duo(Zeus)",
+    "description": "Your lightning deals more damage to Slip-afflicted foes.\u25b8 Bonus Lightning Damage: +30%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Slippery Slope",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Storm Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Thunder Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Divine Vengeance",
+          "group_id": 2
+        },
+        {
+          "boon": "Lightning Lance",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Seismic Hammer",
+    "type": "Duo(Hephaestus)",
+    "description": "Your \u03a9 Cast occasionally creates a blast that deals 500 damage in the area.\u25b8 Blast Recharge Time: 6 Sec.",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Tidal Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Geyser Spout",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Golden Rule",
+    "type": "Duo(Hera)",
+    "description": "You deal more damage the more  you have.\u25b8 Bonus Damage per 100 Gold: +3%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Ocean's Bounty",
+          "group_id": 1
+        },
+        {
+          "boon": "Double Up",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Beach Ball",
+    "type": "Duo(Apollo)",
+    "description": "Your Sprint creates a watery sphere behind you, which surges ahead once you stop.\u25b8 Max Blast Damage (after 2 Sec.): 300",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Breaker Sprint ",
+          "group_id": 1
+        },
+        {
+          "boon": "Blinding Sprint ",
+          "group_id": 1
+        },
+        {
+          "boon": "Wave Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Wave Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Tidal Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Fluid Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Nova Strike",
+          "group_id": 3
+        },
+        {
+          "boon": "Nova Flourish",
+          "group_id": 3
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 3
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Poseidon",
+    "name": "Scalding Vapor",
+    "type": "Duo(Hestia)",
+    "description": "If foes with Slip are struck by fire from Hestia, they are engulfed in Steam.\u25b8 Steam Damage (every 0.2 Sec.): 30",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Slippery Slope",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Highly Flammable",
+          "group_id": 2
+        },
+        {
+          "boon": "Controlled Burn",
+          "group_id": 2
+        },
+        {
+          "boon": "Glowing Coal",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Heaven Strike",
+    "type": "Attack",
+    "description": "Your Attacks inflict Blitz.\u25b8 Blitz Damage: 80/120/160/200",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Heaven Flourish",
+    "type": "Special",
+    "description": "Your Specials inflict Blitz.\u25b8 Blitz Damage: 100/140/180/220",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Storm Ring",
+    "type": "Ring",
+    "description": "Your Casts also causes lightning bolts to repeatedly strike 1 foe at a time.\u25b8 Bolt Damage (every 0.25 Sec.): 20/30/40/50",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Thunder Sprint",
+    "type": "Sprint",
+    "description": "Your Sprint causes surrounding foes to be struck by lightning bolts, which use 3 each.\u25b8 Bolt Damage (every 0.15 Sec.): 20/25/30/35",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Ionic Gain",
+    "type": "Magick",
+    "description": "In each Encounter, an Aether Font appears in the area and restores all  when used.\u25b8 Reappearance Time: 10/9/8/7 Sec.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Air Quality",
+    "type": "Infusion",
+    "description": "While you have at least 5, you can never deal less damage than the limit.\u25b8 Min Damage per Hit: 30",
+    "prerequisites": {
+      "type": "elements",
+      "prereqs": [
+        [
+          "Air",
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Divine Vengeance",
+    "type": "",
+    "description": "After you take damage, your foe is struck by lightning, and again 50% of the time.\u25b8 Bolt Damage: 100 (up to: 2/3/4/5 times)",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Static Shock",
+    "type": "",
+    "description": "After you enter a Location, Prime 50 to make your strikes emit chain-lightning.\u25b8 Lightning Damage: 10/15/20/25",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Spirit Surge",
+    "type": "",
+    "description": "Whenever you use , a random surrounding foe is struck by lightning.\u25b8 Bolt Damage (every 0.25 Sec.): 20/25/30/35",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Lightning Lance",
+    "type": "",
+    "description": "Hold Cast to aim where the binding circle appears. Foes within are struck by lightning.\u25b8 Bolt Damage: 50/70/90/110",
+    "prerequisites": {
+      "type": "any_boon",
+      "prereqs": [
+        {
+          "boon": "Ring"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Double Strike",
+    "type": "",
+    "description": "Your lightning bolt effects may strike 1 more time.\u25b8 Bonus Bolt Chance: +10%/15%/20%/25%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike"
+        },
+        {
+          "boon": "Heaven Flourish"
+        },
+        {
+          "boon": "Storm Ring"
+        },
+        {
+          "boon": "Thunder Sprint"
+        },
+        {
+          "boon": "Spirit Surge"
+        },
+        {
+          "boon": "Divine Vengeance"
+        },
+        {
+          "boon": "Lightning Lance"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Toasting Fork",
+    "type": "",
+    "description": "Your Blitz effects deal damage even if they expire without being activated.\u25b8 Blitz Expiration Damage: 75%/100%/125%/150%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike"
+        },
+        {
+          "boon": "Heaven Flourish"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Electric Overload",
+    "type": "",
+    "description": "Whenever your Blitz effects activate, a bolt of chain-lightning fires from the foe.\u25b8 Lightning Damage: 10/15/20/25",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike"
+        },
+        {
+          "boon": "Heaven Flourish"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Shocking Loss",
+    "type": "Legendary",
+    "description": "Whenever you first deal damage to susceptible foes, you may destroy them outright.\u25b8 Instant Destruction Chance: 20%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Storm Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Thunder Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Ionic Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Static Shock",
+          "group_id": 2
+        },
+        {
+          "boon": "Spirit Surge",
+          "group_id": 2
+        },
+        {
+          "boon": "Lightning Lance",
+          "group_id": 2
+        },
+        {
+          "boon": "Divine Vengeance",
+          "group_id": 2
+        },
+        {
+          "boon": "Double Strike",
+          "group_id": 3
+        },
+        {
+          "boon": "Toasting Fork",
+          "group_id": 3
+        },
+        {
+          "boon": "Electric Overload",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Glorious Disaster",
+    "type": "Duo(Apollo)",
+    "description": "You can Channel +30 into your \u03a9 Cast to repeatedly strike foes with lightning bolts.\u25b8 Bolt Damage (every 0.13 Sec.): 50",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Storm Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Thunder Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Prominence Flare",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Thermal Dynamics",
+    "type": "Duo(Hestia)",
+    "description": "Your Blitz effects also inflict Scorch whenever they deal damage.\u25b8 Scorch Damage: 80",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Killer Current",
+    "type": "Duo(Poseidon)",
+    "description": "Your lightning deals more damage to Slip-afflicted foes.\u25b8 Bonus Lightning Damage: +30%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Storm Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Thunder Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Divine Vengeance",
+          "group_id": 1
+        },
+        {
+          "boon": "Lightning Lance",
+          "group_id": 1
+        },
+        {
+          "boon": "Slippery Slope",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Master Conductor",
+    "type": "Duo(Hephaestus)",
+    "description": "Your chain-lightning deals more damage per bounce and can bounce to you.\u25b8 Damage per Bounce: +20%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Static Shock",
+          "group_id": 1
+        },
+        {
+          "boon": "Electric Overload",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Anvil Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 2
+        },
+        {
+          "boon": "Fixed Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Hail Storm",
+    "type": "Duo(Demeter)",
+    "description": "Your Freeze effects also cause lightning bolts to repeatedly strike afflicted foes.\u25b8 Lightning Damage (every 0.5 Sec.): 30",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Storm Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Thunder Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Ionic Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "Romantic Spark",
+    "type": "Duo(Aphrodite)",
+    "description": "If you Sprint into Blitz-afflicted foes, the effect activated immediately and is stronger.\u25b8 Bonus Blitz Damage: +100%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Flutter Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flutter Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Rapture Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 2
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Zeus",
+    "name": "King's Ransom",
+    "type": "Duo(Hera)",
+    "description": "Give up all your Boons of Hera. For each, raise Lv. for all your Boons of Zeus.\u25b8 Bonus Lv. per Hera Boon: +4",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Heaven Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Storm Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Thunder Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Ionic Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Nova Strike",
+    "type": "Attack",
+    "description": "Your Attacks deal more damage in a larger area.\u25b8 Attack Damage: +40%/+50%/+60%/+70%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Nova Flourish",
+    "type": "Special",
+    "description": "Your Specials deal more damage in a larger area.\u25b8 Special Damage: +60%/+80%/+100%/+120%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Solar Ring",
+    "type": "Ring",
+    "description": "Your Casts inflict Daze, and deal a burst of damage before they expire.\u25b8 Cast Damage: 60/90/120/150",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Blinding Sprint",
+    "type": "Sprint",
+    "description": "Your Sprint is faster and inflicts Daze on nearby foes.\u25b8 Sprint Speed: +15%/+20%/+25%/+30%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Lucid Gain",
+    "type": "Magick",
+    "description": "If you stand in your Casts when they expire, immediately restore .\u25b8 Magick Restored: 50/75/100/125",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Self Healing",
+    "type": "Infusion",
+    "description": "While you have at least 3 , whenever you take damage, restore some .\u25b8 Damage Recovered (over 5 Sec.): 30%",
+    "prerequisites": {
+      "type": "elements",
+      "prereqs": [
+        [
+          "Fire",
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Super Nova",
+    "type": "",
+    "description": "Your Casts expand in size until they expire.\u25b8 Max Cast Size: 40%/50%/60%/70%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Light Smite",
+    "type": "",
+    "description": "After you take damage, your foe takes damage and you inflict Daze on all foes.\u25b8 Revenge Damage: 50/75/100/125",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Perfect Image",
+    "type": "",
+    "description": "In each Encounter, you deal more damage until you take damage. If you take no more for 15 Sec., regain this.\u25b8 No-Hit Bonus Damage: +10%/+15%/+20%/+25%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Back Burner",
+    "type": "",
+    "description": "Foes with Daze take more damage if struck from behind.\u25b8 Backstab Damage: +50%/+75%/+100%/+125%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Solar Ring"
+        },
+        {
+          "boon": "Blinding Sprint"
+        },
+        {
+          "boon": "Dazzling Display"
+        },
+        {
+          "boon": "Light Smite"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Prominence Flare",
+    "type": "",
+    "description": "After your \u03a9 Cast expires, rapidly deal damage in the area for 2 Sec.\u25b8 Omega Cast Damage (every .13 Sec.): 10/12/14/16",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Dazzling Display",
+    "type": "",
+    "description": "Your attacks may inflict Daze.\u25b8 Daze Chance: +10%/+15%/+20%/+25%",
+    "prerequisites": {
+      "type": "the_following",
+      "prereqs": [
+        {
+          "boon": "Nova Strike"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Extra Dose",
+    "type": "",
+    "description": "Your Attack has a chance to hit 2 times.\u25b8 Double Strike Chance: +5%/+8%/+10%/+13%",
+    "prerequisites": {
+      "type": "any_boon",
+      "prereqs": [
+        {
+          "boon": "Strike"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Exceptional Talent",
+    "type": "Legendary",
+    "description": "Your \u03a9 Attack and \u03a9 Special fire 2 times, but use more .\u25b8 Omega Move Cost: +20",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Nova Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Nova Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Extra Dose",
+          "group_id": 3
+        },
+        {
+          "boon": "Super Nova",
+          "group_id": 3
+        },
+        {
+          "boon": "Prominence Flare",
+          "group_id": 3
+        },
+        {
+          "boon": "Back Burner",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Glorious Disaster",
+    "type": "Duo(Zeus)",
+    "description": "You can channel +30 into your \u03a9 Cast to repeatedly strike foes with lightning bolts.\u25b8 Bolt Damage (every 0.13 Sec.): 25",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Prominence Flare",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Storm Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Thunder Sprint",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Rude Awakening",
+    "type": "Duo(Hephaestus)",
+    "description": "Your blast effects from Hephaestus clear Daze and deal more damage if they do.\u25b8 Bonus Blast Damage: 220",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Solar Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Light Smite",
+          "group_id": 1
+        },
+        {
+          "boon": "Dazzling Display",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Phoenix Skin",
+    "type": "Duo(Hestia)",
+    "description": "Give up -100. If you do not take or deal damage for 3 Sec., rapidly restore .\u25b8 Life Restoration (every 1 Sec.): 3",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Nova Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Nova Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Hearth Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Soot Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Burnt Offering",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Sunny Disposition",
+    "type": "Duo(Aphrodite)",
+    "description": "Whenever you create Heartthrobs, create more.\u25b8 Bonus Heartthrobs: +2",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Nova Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Nova Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Heart Breaker",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Beach Ball",
+    "type": "Duo(Poseidon)",
+    "description": "Your Sprint creates a watery sphere behind you, which surges ahead once you stop.\u25b8 Blast Damage (after 2 Sec.): 300",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Blinding Sprint ",
+          "group_id": 1
+        },
+        {
+          "boon": "Breaker Sprint ",
+          "group_id": 1
+        },
+        {
+          "boon": "Nova Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Nova Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Wave Strike",
+          "group_id": 3
+        },
+        {
+          "boon": "Wave Flourish",
+          "group_id": 3
+        },
+        {
+          "boon": "Tidal Ring",
+          "group_id": 3
+        },
+        {
+          "boon": "Fluid Gain",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Sun Worshiper",
+    "type": "Duo(Hera)",
+    "description": "In each Encounter, the first foe you slay returns to fight for you.\u25b8 Servant Damage: +200%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Solar Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Apollo",
+    "name": "Tropical Cyclone",
+    "type": "Duo(Demeter)",
+    "description": "While standing in a Cyclone, you randomly fire gales every 0.3 Sec.\u25b8 Gale Damage (every 0.5 Sec.): 70",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Nova Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Nova Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Frigid Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Gale Force",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Volcanic Strike",
+    "type": "Attack",
+    "description": "Your Attacks occasionally create a blast that deals 200 damage in the area.\u25b8 Blast Recharge Time: 12 Sec./10 Sec./8 Sec./6 Sec.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Volcanic Flourish",
+    "type": "Special",
+    "description": "Your Specials occasionally create a blast that deals 400 damage in the area.\u25b8 Blast Recharge Time: 16 Sec./13 Sec./11 Sec./9 Sec.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Anvil Ring",
+    "type": "Ring",
+    "description": "Your Casts deal damage 3 times in succession.\u25b8 Cast Damage (every 1 Sec.): 50/70/80/90",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Stamp Rush",
+    "type": "Sprint",
+    "description": "After you Dash, occasionally create a blast that deals 100 damage around a nearby foe.\u25b8 Blast Recharge Time: 10 Sec./9 Sec./8 Sec./7 Sec.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Fixed Gain",
+    "type": "Magick",
+    "description": "You take -10% damage, and restore some  whenever you take damage.\u25b8 Magick Restore from Damage: 50/75/100/125",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Martial Art",
+    "type": "Infusion",
+    "description": "Your Attack and Special deal more damage for each  you have.\u25b8 Damage per Earth Boon: +5%",
+    "prerequisites": {
+      "type": "elements",
+      "prereqs": [
+        [
+          "Earth",
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Molten Touch",
+    "type": "",
+    "description": "Your Attacks and Specials deal bonus damage to Armor.\u25b8 Damage vs. Armor: +20%/+30%/+40%/+50%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Trusty Shield",
+    "type": "",
+    "description": "After you enter a Location, Prime 30 to gain Armor until the next Location.\u25b8 Starting Armor: +10 /+15 /+20 /+25",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Mint Condition",
+    "type": "",
+    "description": "At the start of each Encounter, you are briefly Impervious.\u25b8 Impervious Duration: 6 Sec./7 Sec./8 Sec./9 Sec.",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Heavy Metal",
+    "type": "",
+    "description": "Gain some . Foes' attacks cannot knock you away.\u25b8 Armor Gained: +50 /+75 /+100 /+125",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Uncanny Fortitude",
+    "type": "",
+    "description": "Gain bonus  based on your  limit.\u25b8 Max Life from Magick: +20%/+30%/+40%/+50%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Grand Caldera",
+    "type": "",
+    "description": "Your blast effects from Hephaestus deal more damage and are 50% larger.\u25b8 Bonus Blast Damage: +50/+75/+100/+125",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Volcanic Strike"
+        },
+        {
+          "boon": "Volcanic Flourish"
+        },
+        {
+          "boon": "Stamp Rush"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Furnace Blast",
+    "type": "",
+    "description": "Your blast effects from Hephaestus also inflict Vent on foes.\u25b8 Vent Damage: 300/400/500/600",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Volcanic Strike"
+        },
+        {
+          "boon": "Volcanic Flourish"
+        },
+        {
+          "boon": "Stamp Rush"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Fine Tuning",
+    "type": "Legendary",
+    "description": "Your Aspect of the Nocturnal Arms is even stronger.\u25b8 Bonus Aspect Ranks: +1",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Heavy Metal",
+          "group_id": 2
+        },
+        {
+          "boon": "Trusty Shield",
+          "group_id": 2
+        },
+        {
+          "boon": "Mint Condition",
+          "group_id": 2
+        },
+        {
+          "boon": "Grand Caldera",
+          "group_id": 3
+        },
+        {
+          "boon": "Molten Touch",
+          "group_id": 3
+        },
+        {
+          "boon": "Furnace Blast",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Rude Awakening",
+    "type": "Duo(Apollo)",
+    "description": "Your blast effects from Hephaestus clear Daze and deal more damage if they do.\u25b8 Bonus Blast Damage: 220",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Light Smite",
+          "group_id": 2
+        },
+        {
+          "boon": "Dazzling Display",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Room Temperature",
+    "type": "Duo(Demeter)",
+    "description": "Your blast effects from Hephaestus clear Freeze, so you Freeze foes again right away.\u25b8 Freeze Re-Apply Time: 0 Sec.",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Chain Reaction",
+    "type": "Duo(Hestia)",
+    "description": "If you use your blast effects from Hephaestus just after they recharge, they fire 2 times.\u25b8 Double Blast Timing: 2 Sec.",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Hearth Gain",
+          "group_id": 2
+        },
+        {
+          "boon": "Soot Sprint",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Brave Face",
+    "type": "Duo(Hera)",
+    "description": "Automatically use  to resist up to 50% of any damage.\u25b8 Magick Cost per Damage Point: 5",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Grand Caldera",
+          "group_id": 1
+        },
+        {
+          "boon": "Molten Touch",
+          "group_id": 1
+        },
+        {
+          "boon": "Heavy Metal",
+          "group_id": 1
+        },
+        {
+          "boon": "Trusty Shield",
+          "group_id": 1
+        },
+        {
+          "boon": "Mint Condition",
+          "group_id": 1
+        },
+        {
+          "boon": "Uncanny Fortitude",
+          "group_id": 1
+        },
+        {
+          "boon": "Furnace Blast",
+          "group_id": 1
+        },
+        {
+          "boon": "Nasty Comeback",
+          "group_id": 2
+        },
+        {
+          "boon": "Family Trade",
+          "group_id": 2
+        },
+        {
+          "boon": "Hereditary Bane",
+          "group_id": 2
+        },
+        {
+          "boon": "Dying Wish",
+          "group_id": 2
+        },
+        {
+          "boon": "Blood Line",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Seismic Hammer",
+    "type": "Duo(Poseidon)",
+    "description": "Your \u03a9 Cast occasionally creates a blast that deals 500 damage in the area.\u25b8 Blast Recharge Time: 6 Sec.",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Tidal Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Geyser Spout",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Master Conductor",
+    "type": "Duo(Zeus)",
+    "description": "Your chain-lightning deals more damage per bounce and can bounce to you.\u25b8 Damage per Bounce: +20%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Anvil Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Fixed Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Static Shock",
+          "group_id": 2
+        },
+        {
+          "boon": "Electric Overload",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hephaestus",
+    "name": "Love Handles",
+    "type": "Duo(Aphrodite)",
+    "description": "Your blast effects from Hephaestus also create a Heartthrobs.\u25b8 Heartthrob Area Damage: 120",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Stamp Rush",
+          "group_id": 1
+        },
+        {
+          "boon": "Flutter Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flutter Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Rapture Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 2
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Sworn Strike",
+    "type": "Attack",
+    "description": "Your Attacks deal more damage and inflict Hitch.\u25b8 Attack Damage: +50%/+60%/+70%/+80%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Sworn Flourish",
+    "type": "Special",
+    "description": "Your Specials deal more damage and inflict Hitch.\u25b8 Special Damage: +60%/+70%/+80%/+90%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Engagement Ring",
+    "type": "Ring",
+    "description": "Your Casts inflict Hitch. Whenever foes within are slain, they damage surrounding foes.\u25b8 Death Blast Damage: 50/75/100/125",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Nexus Sprint",
+    "type": "Sprint",
+    "description": "Your Sprint inflicts Hitch on contact with foes, and deals damage when it does.\u25b8 Damage with Hitch: 60/90/120/150",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Born Gain",
+    "type": "Magick",
+    "description": "Whenever you run out of , Prime to restore all  up to the reduced limit.\u25b8 Magick Primed: 20/18/16/14",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Proper Upbringing",
+    "type": "Infusion",
+    "description": "While you have at least 3 , all your Common Boons gain Rarity.\u25b8 Improved Rarity: Rare",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Bridal Glow",
+    "type": "",
+    "description": "Your Boons become Heroic, then lose Rarity every X Encounters. Random Boons Affected: 2\u25b8 Encounters: 5/7/8/9",
+    "prerequisites": {
+      "type": "edge_case",
+      "prereqs": [
+        {
+          "boon": "Have at least two Boons that are not the Heroic rarity."
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Uncommon Grace",
+    "type": "",
+    "description": "While none of other Boons are Common, deal more damage.\u25b8 Common-Less Bonus Damage: +10%/+15%/+20%/+25%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Nasty Comeback",
+    "type": "",
+    "description": "After you take damage, inflict your foe with Hitch and deal damage in greater measure.\u25b8 Damage Reflected: 500%/700%/1000%/1250%",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Blood Line",
+    "type": "",
+    "description": "Your \u03a9 Moves create a rift that strikes foes in front of and behind you, but use +15.\u25b8 Rift Damage: 100/120/140/160",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Hereditary Bane",
+    "type": "",
+    "description": "Your Hitch effects deal more damage and last +5 Sec.\u25b8 Hitch Damage: +10%/+15%/+20%/+25%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Sworn Strike"
+        },
+        {
+          "boon": "Sworn Flourish"
+        },
+        {
+          "boon": "Engagement Ring"
+        },
+        {
+          "boon": "Nexus Sprint"
+        },
+        {
+          "boon": "Nasty Comeback"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Dying Wish",
+    "type": "",
+    "description": "Whenever Hitch-afflicted foes are slain, damage all other Hitch-afflicted foes.\u25b8 Hitch Death Damage: 40/60/80/100",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Sworn Strike"
+        },
+        {
+          "boon": "Sworn Flourish"
+        },
+        {
+          "boon": "Engagement Ring"
+        },
+        {
+          "boon": "Nexus Sprint"
+        },
+        {
+          "boon": "Nasty Comeback"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Rousing Reception",
+    "type": "",
+    "description": "Your Casts damage any foes as they join the Encounter, wherever they appear.\u25b8 On-Spawn Damage: 60/80/100/120",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Rapture Ring"
+        },
+        {
+          "boon": "Solar Ring"
+        },
+        {
+          "boon": "Arctic Ring"
+        },
+        {
+          "boon": "Anvil Ring"
+        },
+        {
+          "boon": "Engagement Ring"
+        },
+        {
+          "boon": "Smolder Ring"
+        },
+        {
+          "boon": "Tidal Ring"
+        },
+        {
+          "boon": "Storm Ring"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "All Together",
+    "type": "Legendary",
+    "description": "Gain     Elements, and 1 Infusion Boon for each.\u25b8 Essences Gained per Element: +1",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Sworn Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Bridal Glow",
+          "group_id": 2
+        },
+        {
+          "boon": "Uncommon Grace",
+          "group_id": 2
+        },
+        {
+          "boon": "Blood Line",
+          "group_id": 2
+        },
+        {
+          "boon": "Hereditary Bane",
+          "group_id": 3
+        },
+        {
+          "boon": "Rousing Reception",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Incandescent Aura",
+    "type": "Duo(Hestia)",
+    "description": "Whenever you restore , damage surrounding foes.\u25b8 Damage from Magick Restored: 500% (every 0.2 Sec.)",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Sworn Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Soot Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Hearth Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Ecstatic Obsession",
+    "type": "Duo(Aphrodite)",
+    "description": "During Encounters with multiple foes, 1 foe is always afflicted with Charm.\u25b8 Foes Required: +2 (or more)",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Sworn Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Nasty Comeback",
+          "group_id": 1
+        },
+        {
+          "boon": "Rapture Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 2
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Brave Face",
+    "type": "Duo(Hephaestus)",
+    "description": "Automatically use  to resist up to 50% of any damage.\u25b8 Magic Cost per Damage Point: 5",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Nasty Comeback",
+          "group_id": 1
+        },
+        {
+          "boon": "Rousing Reception",
+          "group_id": 1
+        },
+        {
+          "boon": "Hereditary Bane",
+          "group_id": 1
+        },
+        {
+          "boon": "Dying Wish",
+          "group_id": 1
+        },
+        {
+          "boon": "Blood Line",
+          "group_id": 1
+        },
+        {
+          "boon": "Grand Caldera",
+          "group_id": 2
+        },
+        {
+          "boon": "Molten Touch",
+          "group_id": 2
+        },
+        {
+          "boon": "Heavy Metal",
+          "group_id": 2
+        },
+        {
+          "boon": "Trusty Shield",
+          "group_id": 2
+        },
+        {
+          "boon": "Mint Condition",
+          "group_id": 2
+        },
+        {
+          "boon": "Uncanny Fortitude",
+          "group_id": 2
+        },
+        {
+          "boon": "Furnace Blast",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Cherished Heirloom",
+    "type": "Duo(Demeter)",
+    "description": "Your Keepsakes are stronger this night (if possible).\u25b8 Bonus Keepsake Ranks: +1",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Sworn Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Frigid Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Tranquil Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Golden Rule",
+    "type": "Duo(Poseidon)",
+    "description": "You deal more damage the more  you have.\u25b8 Bonus Damage per 100 Gold: +3%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Sworn Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Ocean's Bounty",
+          "group_id": 2
+        },
+        {
+          "boon": "Double Up",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Sun Worshiper",
+    "type": "Duo(Apollo)",
+    "description": "In each Encounter, the first foe you slay returns to fight for you.\u25b8 Servant Damage: +200%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Engagement Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hera",
+    "name": "Queen's Ransom",
+    "type": "Duo(Zeus)",
+    "description": "Give up all your Boons of Zeus. For each, raise Lv. for all your Boons of Hera.\u25b8 Bonus Lv. per Zeus Boon: +4",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Sworn Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Storm Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Thunder Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Ionic Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Flame Strike",
+    "type": "Attack",
+    "description": "Your Attacks inflict Scorch.\u25b8 Scorch Damage: 30/40/50/60",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Flame Flourish",
+    "type": "Special",
+    "description": "Your Specials inflict Scorch.\u25b8 Scorch Damage: 20/25/30/35",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Smolder Ring",
+    "type": "Ring",
+    "description": "Your Casts repeatedly inflict Scorch on foes.\u25b8 Scorch Damage (every 1 Sec.): 40/60/80/100",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Soot Sprint",
+    "type": "Sprint",
+    "description": "Your Sprint destroys most ranged shots near you, and inflicts Scorch on foes that fired.\u25b8 Scorch Damage per Projectile: 2/4/6/8",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Warmth Gain",
+    "type": "Magick",
+    "description": "Whenever your Attack or Special deal damage, restore .\u25b8 Magick Restored per Strike: 4/6/8/10",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Slow Cooker",
+    "type": "Infusion",
+    "description": "Your Attacks and Specials gain Power the more  you have.\u25b8 Power per Fire Boon: +2",
+    "prerequisites": {
+      "type": "elements",
+      "prereqs": [
+        [
+          "Fire",
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Glowing Coal",
+    "type": "",
+    "description": "Hold Cast to aim a fiery projectile that explodes on impact. The binding circle forms there.\u25b8 Blast Damage: 60/90/120/150",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Controlled Burn",
+    "type": "",
+    "description": "Your \u03a9 Special also launches a fiery projectile, but uses +10.\u25b8 Blast Damage: 100/150/200/250",
+    "prerequisites": {
+      "type": "none",
+      "prereqs": []
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Burnt Offering",
+    "type": "",
+    "description": "Gain  and , but give up 1 Boon selected by Hestia.\u25b8 Max Life & Magick: +50/+60/+70/+80",
+    "prerequisites": {
+      "type": "edge_case",
+      "prereqs": [
+        {
+          "boon": "Have at least one Boon."
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Hot Pot",
+    "type": "",
+    "description": "You have a chance to Dodge, which is doubled against Scorch-afflicted foes.\u25b8 Innate Dodge Chance: +4%/+5%/+6%/+7%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Flame Strike"
+        },
+        {
+          "boon": "Flame Flourish"
+        },
+        {
+          "boon": "Smolder Ring"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Natural Gas",
+    "type": "",
+    "description": "Whenever Scorch-afflicted foes are slain, they damage surrounding foes.\u25b8 Blast Damage: 60/90/120/150",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Flame Strike"
+        },
+        {
+          "boon": "Flame Flourish"
+        },
+        {
+          "boon": "Smolder Ring"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Pyro Technique",
+    "type": "",
+    "description": "Your Scorch effects deal damage faster.\u25b8 Scorch Damage Rate: +50%/+75%/+100%/+125%",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Flame Strike"
+        },
+        {
+          "boon": "Flame Flourish"
+        },
+        {
+          "boon": "Smolder Ring"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Highly Flammable",
+    "type": "",
+    "description": "Whenever you inflict Scorch on a foe for the first time, inflict more.\u25b8 First-Time Scorch Damage: +50/+75/+100/+125",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Flame Strike"
+        },
+        {
+          "boon": "Flame Flourish"
+        },
+        {
+          "boon": "Smolder Ring"
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Fire Walk",
+    "type": "Legendary",
+    "description": "You take no more than 1 damage at a time from fire, and leave flames where you Sprint.\u25b8 Flame Trail Damage (every 0.25 Sec.): 20",
+    "prerequisites": {
+      "type": "one_of_following",
+      "prereqs": [
+        {
+          "boon": "Flame Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Natural Gas",
+          "group_id": 2
+        },
+        {
+          "boon": "Crispy Coating",
+          "group_id": 2
+        },
+        {
+          "boon": "Pyro Technique",
+          "group_id": 2
+        },
+        {
+          "boon": "Highly Flammable",
+          "group_id": 2
+        },
+        {
+          "boon": "Glowing Coal",
+          "group_id": 3
+        },
+        {
+          "boon": "Controlled Burn",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Incandescent Aura",
+    "type": "Duo(Hera)",
+    "description": "Whenever you restore , damage surrounding foes.\u25b8 Damage from Magick Restored: 500% (every 0.2 Sec.)",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flame Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Soot Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Hearth Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Sworn Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Sworn Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Engagement Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Nexus Sprint",
+          "group_id": 2
+        },
+        {
+          "boon": "Born Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Freezer Burn",
+    "type": "Duo(Demeter)",
+    "description": "Whenever you inflict Freeze, on a foe with Scorch, deal damage and remove Scorch.\u25b8 Damage from Scorch: 200%",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flame Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Ice Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Ice Flourish",
+          "group_id": 2
+        },
+        {
+          "boon": "Arctic Ring",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Burning Desire",
+    "type": "Duo(Aphrodite)",
+    "description": "While foes are Weak, any Scorch they have does not diminish as it deals damage.\u25b8 Scorch Duration on Weak Foes: \u221e",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flame Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Rapture Ring",
+          "group_id": 2
+        },
+        {
+          "boon": "Passion Rush",
+          "group_id": 2
+        },
+        {
+          "boon": "Glamour Gain",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Phoenix Skin",
+    "type": "Duo(Apollo)",
+    "description": "Give up -100. If you do not take or deal damage for 3 Sec., rapidly restore .\u25b8 Life Restoration (every 1 Sec.): 3",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flame Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Hearth Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Soot Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Burnt Offering",
+          "group_id": 2
+        },
+        {
+          "boon": "Nova Strike",
+          "group_id": 3
+        },
+        {
+          "boon": "Nova Flourish",
+          "group_id": 3
+        },
+        {
+          "boon": "Solar Ring",
+          "group_id": 3
+        },
+        {
+          "boon": "Lucid Gain",
+          "group_id": 3
+        },
+        {
+          "boon": "Blinding Sprint",
+          "group_id": 3
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Chain Reaction",
+    "type": "Duo(Hephaestus)",
+    "description": "If you use your blast effects from Hephaestus just after they recharge, they fire 2 times.\u25b8 Double Blast Timing: 2 Sec.",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flame Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Hearth Gain",
+          "group_id": 1
+        },
+        {
+          "boon": "Soot Sprint",
+          "group_id": 1
+        },
+        {
+          "boon": "Volcanic Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Volcanic Flourish",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Thermal Dynamics",
+    "type": "Duo(Zeus)",
+    "description": "Your Blitz effects also inflict Scorch whenever they deal damage.\u25b8 Scorch Damage: 80",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flame Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Heaven Strike",
+          "group_id": 2
+        },
+        {
+          "boon": "Heaven Flourish",
+          "group_id": 2
+        }
+      ]
+    }
+  },
+  {
+    "god": "Hestia",
+    "name": "Scalding Vapor",
+    "type": "Duo(Poseidon)",
+    "description": "If foes with Slip are struck by fire from Hestia, they are engulfed in Steam.\u25b8 Steam Damage (every 0.2 Sec.): 30",
+    "prerequisites": {
+      "type": "one_of_each",
+      "prereqs": [
+        {
+          "boon": "Flame Strike",
+          "group_id": 1
+        },
+        {
+          "boon": "Flame Flourish",
+          "group_id": 1
+        },
+        {
+          "boon": "Smolder Ring",
+          "group_id": 1
+        },
+        {
+          "boon": "Highly Flammable",
+          "group_id": 1
+        },
+        {
+          "boon": "Controlled Burn",
+          "group_id": 1
+        },
+        {
+          "boon": "Glowing Coal",
+          "group_id": 1
+        },
+        {
+          "boon": "Slippery Slope",
+          "group_id": 2
+        }
+      ]
+    }
+  }
+]
