@@ -6,6 +6,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@react-sigma/core": "^5.0.2",
     "@sigma/node-image": "^3.0.0",
     "graphology": "^0.25.4",

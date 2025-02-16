@@ -1,9 +1,15 @@
 import { useRegisterEvents, useSigma } from '@react-sigma/core';
 import { useEffect, useState } from 'react';
 import debounce from 'lodash/debounce'; 
+import MyModal from './Popup';
+import boons from './all_boons.json'
 
 const NODE_FADE_COLOR = "#eee";
 const EDGE_FADE_COLOR = "#eee";
+
+const boonData = (boonname) => {
+  return boons.find((boon) => boon.name === boonname);
+}
 
 const GraphEvents = () => {
   const registerEvents = useRegisterEvents();
@@ -11,7 +17,13 @@ const GraphEvents = () => {
   // curr state and function to update it
   const [hoveredNode, setHoveredNode] = useState(null);
   const [draggedNode, setDraggedNode] = useState(null);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedNode, setSelectedNode] = useState(null);
   const debouncedHoveredNode = useDebouncedValue(hoveredNode, 40);
+
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
 
   useEffect(() => {
     if (!sigma) return;
@@ -27,7 +39,8 @@ const GraphEvents = () => {
             node === debouncedHoveredNode ||
             graph.hasEdge(node, debouncedHoveredNode) ||
             graph.hasEdge(debouncedHoveredNode, node)
-              ? { ...data, zIndex: 2, size: 10 + ((graph.inDegree(node) + graph.outDegree(node)) * 1.5)}
+                // + graph.outDegree(node)) ? 
+              ? { ...data, zIndex: 2, size: 10 + (graph.inDegree(node)  * 1.5)}
               : { 
                   ...data, 
                   zIndex: 0, 
@@ -55,6 +68,8 @@ const GraphEvents = () => {
   }, [debouncedHoveredNode, sigma]);
 
   useEffect(() => {
+    const graph = sigma.getGraph();
+
     registerEvents({
       enterNode: (event) => {
         setHoveredNode(event.node);
@@ -64,7 +79,25 @@ const GraphEvents = () => {
       },
       downNode: (event) => {
         setDraggedNode(event.node);
-        console.log(event.node);
+      },
+      doubleClickNode: (event) => {
+        const node = graph.getNodeAttributes(event.node);
+        const viewportPos = sigma.graphToViewport({
+          x: node.x,
+          y: node.y
+        });
+        
+        setPosition({
+          x: viewportPos.x,
+          y: viewportPos.y
+        });
+
+        const clickedNode = boonData(event.node);
+        if (clickedNode) {
+          setSelectedNode(clickedNode);
+          setIsOpen(true);
+        }
+        
       },
       mousemove: (event) => {
         if (!draggedNode) return;
@@ -82,15 +115,28 @@ const GraphEvents = () => {
         if (draggedNode) {
           setDraggedNode(null);
         }
+        if (selectedNode){
+          setSelectedNode(null);
+        }
       },
       // pressed
       mousedown: () => {
         if (!sigma.getCustomBBox()) sigma.setCustomBBox(sigma.getBBox());
+ 
       },
     });
   }, [registerEvents, draggedNode, sigma]);
-
-  return null;
+  
+  return (
+    <>
+      <MyModal 
+        isOpen={isOpen} 
+        setIsOpen={setIsOpen}
+        boonData={selectedNode}
+        position={position}
+      />
+    </>
+  );
 };
 
 
