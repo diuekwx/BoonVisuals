@@ -26,6 +26,7 @@ const Popup = ({ isOpen, setIsOpen, boonData, position }) => {
               <div>
 
                 <h3>Prerequisites ({boonData.prerequisites.type}):</h3>
+                {console.log(boonData.prerequisites)}
                 {boonData.prerequisites.prereqs.map((prereq, index) => {
                   return (
                     <div key={index}>

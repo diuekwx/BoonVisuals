@@ -11,6 +11,34 @@ const boonData = (boonname) => {
   return boons.find((boon) => boon.name === boonname);
 }
 
+export const getNodeReducer = (highlightedNode, graph) => {
+  return highlightedNode
+    ? (node, data) => 
+        node === highlightedNode ||
+        graph.hasEdge(node, highlightedNode) ||
+        graph.hasEdge(highlightedNode, node)
+          ? { ...data, zIndex: 2, size: 10 + (graph.inDegree(node) * 1.5)}
+          : { 
+              ...data, 
+              zIndex: 0, 
+              label: "", 
+              size: 10,
+              image: null,
+              color: NODE_FADE_COLOR,
+              type: 'circle' 
+            }
+    : null;
+};
+
+export const getEdgeReducer = (highlightedNode, graph) => {
+  return highlightedNode
+    ? (edge, data) =>
+        graph.hasExtremity(edge, highlightedNode)
+          ? { ...data, size: 4, zIndex: 2}
+          : { ...data, color: EDGE_FADE_COLOR, zIndex: 0}
+    : null;
+};
+
 const GraphEvents = () => {
   const registerEvents = useRegisterEvents();
   const sigma = useSigma();
@@ -31,39 +59,8 @@ const GraphEvents = () => {
     const graph = sigma.getGraph();
 
     //change node before process
-    sigma.setSetting(
-      "nodeReducer",
-      debouncedHoveredNode
-        ? (node, data) => 
-            
-            node === debouncedHoveredNode ||
-            graph.hasEdge(node, debouncedHoveredNode) ||
-            graph.hasEdge(debouncedHoveredNode, node)
-                // + graph.outDegree(node)) ? 
-              ? { ...data, zIndex: 2, size: 10 + (graph.inDegree(node)  * 1.5)}
-              : { 
-                  ...data, 
-                  zIndex: 0, 
-                  label: "", 
-                  size: 10,
-                  image: null,
-                  color: NODE_FADE_COLOR,
-                  type: 'circle' 
-                }
-               
-        : null
-    ); 
-
-    sigma.setSetting(
-      "edgeReducer",
-      debouncedHoveredNode
-        ? (edge, data) =>
-            graph.hasExtremity(edge, debouncedHoveredNode)
-              ? { ...data, size: 4, zIndex: 2}
-              // or just set hidden: true
-              : { ...data, color: EDGE_FADE_COLOR, zIndex: 0}
-        : null
-    );
+    sigma.setSetting("nodeReducer", getNodeReducer(debouncedHoveredNode, graph));
+    sigma.setSetting("edgeReducer", getEdgeReducer(debouncedHoveredNode, graph));
     // when dependency changes, will run effect
   }, [debouncedHoveredNode, sigma]);
 

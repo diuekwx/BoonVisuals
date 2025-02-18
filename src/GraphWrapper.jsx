@@ -5,6 +5,7 @@ import { NodeImageProgram } from '@sigma/node-image';
 import maps from './img_map.json'
 import boons from './all_boons.json'
 import GraphEvents from './GraphEvents';
+import GraphSearcher from './GraphSearch';
 
 
 function importAll(r) {
@@ -62,7 +63,6 @@ const GraphComponent = () => {
               //type: boon.type,
               //description: boon.description,
               image: images[maps[boon.name]],
-              
               color: godColors[boon.god] || '#808080',
               size: sizeNode
             });
@@ -124,6 +124,7 @@ const BoonGraph = () => {
       <SigmaContainer settings={sigmaSettings} className="w-full h-full">
         <GraphComponent />
         <GraphEvents />
+        <GraphSearcher />
       </SigmaContainer>
     </div>
   );
