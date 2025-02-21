@@ -6,6 +6,8 @@ import maps from './img_map.json'
 import boons from './all_boons.json'
 import GraphEvents from './GraphEvents';
 import GraphSearcher from './GraphSearch';
+import GodClustersPanel from './ClusterPanel';
+// import '@react-sigma/core/lib/style.css';
 
 
 function importAll(r) {
@@ -13,15 +15,31 @@ function importAll(r) {
     r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
   return images
 }
-// https://shaquillegalimba.medium.com/how-to-import-multiple-images-in-react-1936efeeae7b
 const images = importAll(require.context('./boon_images', false, /\.(png|jpe?g|svg)$/));
-//console.log(images.find("Air_Quality_II.png"));
+
 
 const sigmaSettings = {
+  // allowInvalidContainer: true,
   nodeProgramClasses: { image: NodeImageProgram },
   defaultNodeType: 'image',
   defaultEdgeType: 'arrow',
   zIndex: true
+};
+
+const godColors = {
+  'Aphrodite': '#ff69b4',
+  'Artemis': '#90ee90',
+  'Athena': '#ffd700',
+  'Chaos': '#4b0082',
+  'Demeter': '#21cbcb',
+  'Dionysus': '#800080',
+  'Hermes': '#ffa500',
+  'Poseidon': '#00bfff',
+  'Zeus': '#87ceeb',
+  'Apollo': '#ffd700',
+  'Hephaestus': '#cd853f',
+  'Hera': '#9370db',
+  'Hestia': '#ff4500'
 };
 
 const nodeSize = prereqedges => 10 + (prereqedges * 1.5);
@@ -35,30 +53,17 @@ const GraphComponent = () => {
 
     const loadData = async () => {
       try{
-        const godColors = {
-                    'Aphrodite': '#ff69b4',
-                    'Artemis': '#90ee90',
-                    'Athena': '#ffd700',
-                    'Chaos': '#4b0082',
-                    'Demeter': '#21cbcb',
-                    'Dionysus': '#800080',
-                    'Hermes': '#ffa500',
-                    'Poseidon': '#00bfff',
-                    'Zeus': '#87ceeb',
-                    'Apollo': '#ffd700',
-                    'Hephaestus': '#cd853f',
-                    'Hera': '#9370db',
-                    'Hestia': '#ff4500'
-                  };
         const graph = new Graph();
 
         boons.forEach((boon) => {
           var sizeNode = nodeSize(boon.prerequisites.prereqs.length);
           if (!graph.hasNode(boon.name)) {
             graph.addNode(boon.name, {
-              x  : Math.random(),
-              y : Math.random(),
+              id: boon.name, 
+              x: Math.random(),
+              y: Math.random(),
               label: boon.name,
+              god: boon.god,
               //god: boon.god,
               //type: boon.type,
               //description: boon.description,
@@ -119,12 +124,23 @@ const GraphComponent = () => {
 
 
 const BoonGraph = () => {
+  const [hoveredNode, setHoveredNode] = useState(null);
+
   return (
     <div className="w-full h-screen bg-gray-900">
-      <SigmaContainer settings={sigmaSettings} className="w-full h-full">
+      <SigmaContainer settings={sigmaSettings}  className="w-full h-full">
         <GraphComponent />
-        <GraphEvents />
-        <GraphSearcher />
+        <GraphEvents 
+                  hoveredNode={hoveredNode} 
+                  setHoveredNode={setHoveredNode} 
+                  />
+        <GraphSearcher 
+              hoveredNode={hoveredNode} 
+              setHoveredNode={setHoveredNode} 
+              />
+        <GodClustersPanel 
+          godColors={godColors} 
+        />
       </SigmaContainer>
     </div>
   );

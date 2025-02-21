@@ -21,7 +21,7 @@ export const getNodeReducer = (highlightedNode, graph) => {
           : { 
               ...data, 
               zIndex: 0, 
-              label: "", 
+              label: "",
               size: 10,
               image: null,
               color: NODE_FADE_COLOR,
@@ -39,11 +39,11 @@ export const getEdgeReducer = (highlightedNode, graph) => {
     : null;
 };
 
-const GraphEvents = () => {
+const GraphEvents = ({ hoveredNode, setHoveredNode }) => {
   const registerEvents = useRegisterEvents();
   const sigma = useSigma();
   // curr state and function to update it
-  const [hoveredNode, setHoveredNode] = useState(null);
+  //const [hoveredNode, setHoveredNode] = useState(null);
   const [draggedNode, setDraggedNode] = useState(null);
 
   const [isOpen, setIsOpen] = useState(false);
@@ -123,6 +123,7 @@ const GraphEvents = () => {
       },
     });
   }, [registerEvents, draggedNode, sigma]);
+
   
   return (
     <>
